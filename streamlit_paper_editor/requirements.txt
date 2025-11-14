@@ -1,4 +1,0 @@
-streamlit>=1.20
-requests
-python-docx
-PyPDF2
