@@ -1,0 +1,22 @@
+{
+  "error_codes": [
+    "A1",
+    "B1",
+    "C1",
+    "D1",
+    "F2",
+    "I2"
+  ],
+  "labels": {
+    "A1": "Grammar & Morphology",
+    "B1": "Vocabulary & Word Choice",
+    "C1": "Argument Structure",
+    "D1": "Cohesion & Flow",
+    "F2": "Citation & Formatting",
+    "I2": "Task Response / Relevance"
+  },
+  "model_prompts": {
+    "segmentation_prompt": "Please segment the submitted paper into rhetorical sections and output JSON exactly in this format: {\"segment_data\":{...}}. Use the fields: [Title],[claiming centrality],[Describing Real-world Phenomena],[Claiming Importance in the Real World],[Describing Real-world Problem(s)],[Introducing Existing Solution(s)],[Reviewing Previous Research],[Identifying Research Gap(s)],[Showing Mixed Findings],[Articulating Research Purpose(s)],[Method],[Claiming Contribution(s)],[Implication]} and also produce an \"error_part\" list containing detected error codes from the allowed list.",
+    "error_explanation_prompt": "Given the student's text for a highlighted span and the code (e.g. A1), explain concisely *why* this is an instance of that error for this student, then provide a personalized fix suggestion and a 1-2 sentence model-corrected rewrite. Output JSON: {\"code\":\"A1\",\"span\":\"...\",\"reason\":\"...\",\"suggestion\":\"...\",\"rewrite\":\"...\"}"
+  }
+}

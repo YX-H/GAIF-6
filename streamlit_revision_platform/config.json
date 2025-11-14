@@ -1,0 +1,5 @@
+{
+  "api_url": "https://your-model-endpoint.example.com/predict",
+  "api_key_env": "MODEL_API_KEY",
+  "timeout_seconds": 60
+}
