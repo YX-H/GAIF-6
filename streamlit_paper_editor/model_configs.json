@@ -1,0 +1,12 @@
+{
+  "segment_model": {
+    "url": "https://api.your-model-endpoint/segment",
+    "api_key_env": "SEGMENT_MODEL_API_KEY",
+    "description": "微调模型 1：用于将论文分为修辞段落，输出 key 'segment_data'，请遵循 Output Format。"
+  },
+  "error_model": {
+    "url": "https://api.your-model-endpoint/error",
+    "api_key_env": "ERROR_MODEL_API_KEY",
+    "description": "微调模型 2：用于检测错误代码，返回 JSON 包含 'error_part' (list of codes) 和可选 'instances' 字段。"
+  }
+}
